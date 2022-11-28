@@ -12,13 +12,13 @@ public class MotoDeTrilha extends Moto {
     private String registro;
     private String valor;
     
-    public MotoDeTrilha(String marca, int ano, String modelo, Boolean partidaEletr, int cilindradas, String cor, String registro, String valor) {
+    public MotoDeTrilha(String marca, String modelo, int cilindradas, String cor, int ano, Boolean partidaEletr, String registro, String valor) {
             setMarca(marca);
-            setAno(ano);
             setModelo(modelo);
-            setPartidaEletr(partidaEletr);
             setCilindradas(cilindradas);
             setCor(cor);
+            setAno(ano);
+            setPartidaEletr(partidaEletr);
             this.registro = registro;
             this.valor = valor;
         }
