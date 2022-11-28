@@ -4,6 +4,9 @@
  */
 package br.com.gustavoeeliezer.trabalhofinal;
 
+import static java.lang.Boolean.parseBoolean;
+import static java.lang.Double.parseDouble;
+import static java.lang.Integer.parseInt;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -290,6 +293,7 @@ public class FormMotos extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        
         String marca = textField1.getText();
         String modelo = textField2.getText();
         String cilindradas = textField3.getText();
@@ -298,6 +302,21 @@ public class FormMotos extends javax.swing.JFrame {
         String partida_eletrica = textField6.getText();
         String registro = textField7.getText();
         String valor = textField8.getText();
+        
+        
+        MotoDeTrilha motoDeTrilha;
+        motoDeTrilha = new MotoDeTrilha(
+                textField1.getText(),
+                parseInt(textField2.getText()),
+                textField3.getText(),
+                parseBoolean(textField4.getText()),
+                parseInt(textField5.getText()),
+                textField6.getText(),
+                textField7.getText(),
+                textField8.getText()
+        );
+              
+        
 
         DefaultTableModel tabelaFuncionario = (DefaultTableModel) tbMotos.getModel();
         Object[] novaMoto = new Object[]{

@@ -11,6 +11,17 @@ package br.com.gustavoeeliezer.trabalhofinal;
 public class MotoDeTrilha extends Moto {
     private String registro;
     private String valor;
+    
+    public MotoDeTrilha(String marca, int ano, String modelo, Boolean partidaEletr, int cilindradas, String cor, String registro, String valor) {
+            setMarca(marca);
+            setAno(ano);
+            setModelo(modelo);
+            setPartidaEletr(partidaEletr);
+            setCilindradas(cilindradas);
+            setCor(cor);
+            this.registro = registro;
+            this.valor = valor;
+        }
 
     public String getRegistro() {
         return registro;

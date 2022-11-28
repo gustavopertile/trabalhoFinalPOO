@@ -4,6 +4,8 @@
  */
 package br.com.gustavoeeliezer.trabalhofinal;
 
+import static java.lang.Double.parseDouble;
+import static java.lang.Integer.parseInt;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -305,6 +307,18 @@ public class FormFuncionarios extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        Funcionario funcionario;
+        funcionario = new Funcionario(
+                textField1.getText(),
+                parseInt(textField2.getText()),
+                textField3.getText(),
+                textField4.getText(),
+                parseDouble(textField5.getText()),
+                textField6.getText(),
+                textField7.getText(),
+                parseDouble(textField8.getText())
+        );
+        
         String nome = textField1.getText();
         String idade = textField2.getText();
         String endereco = textField3.getText();

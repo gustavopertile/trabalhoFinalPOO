@@ -8,9 +8,20 @@ package br.com.gustavoeeliezer.trabalhofinal;
  *
  * @author gustavopertile
  */
- public final class Estagiário extends Pessoa {
+ public final class Estagiario extends Pessoa {
         private String bolsa; 
         private int horas_servico;
+        
+         public Estagiario(String nome, int idade, String endereço, String sexo, Double altura, String telefone, String bolsa, int horas_servico) {
+            setNome(nome);
+            setIdade(idade);
+            setEndereço(endereço);
+            setSexo(sexo);
+            setAltura(altura);
+            setTelefone(telefone);
+            this.bolsa = bolsa;
+            this.horas_servico = horas_servico;
+        }
 
         /**
          * @return the bolsa
